@@ -3,6 +3,7 @@ const canvas = document.getElementById("2dPlot");
 
 canvas.width = window.innerWidth * 0.6;
 canvas.height = window.innerHeight * 0.6;
+console.log("Init Canvas size:", canvas.width, canvas.height);
 
 /** @type {CanvasRenderingContext2D} */
 const ctx = canvas.getContext("2d");
@@ -165,6 +166,7 @@ fetch("penguin.csv")
     .then(response => response.text())
     .then(csvText => {
         processData(csvText);
+        console.log("Data parsed successfull");
     })
     .catch(error => {
         console.error("Error while parsing .csv:", error);
@@ -191,6 +193,8 @@ canvas.addEventListener("mousemove", e => {
 window.onresize = () => {
     canvas.width = window.innerWidth * 0.6;
     canvas.height = window.innerHeight * 0.6;
+
+    console.log("Resize Canvas to:", canvas.width, canvas.height);
 
     // Re-scale the data points
     dataParsed = [];
