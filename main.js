@@ -3,6 +3,7 @@ const canvas = document.getElementById("2dPlot");
 
 canvas.width = window.innerWidth * 0.6;
 canvas.height = window.innerHeight * 0.6;
+console.log("Init Canvas size:", canvas.width, canvas.height);
 
 /** @type {CanvasRenderingContext2D} */
 const ctx = canvas.getContext("2d");
