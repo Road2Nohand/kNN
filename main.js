@@ -165,6 +165,7 @@ fetch("penguin.csv")
     .then(response => response.text())
     .then(csvText => {
         processData(csvText);
+        console.log("Data parsed successfull");
     })
     .catch(error => {
         console.error("Error while parsing .csv:", error);
