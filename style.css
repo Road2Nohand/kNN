@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: darkslategray;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+pre {
+    margin-top: 6vh;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    background: darkslategray;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 30vw; /* Set the width to 50% of the screen width */
+}
+
+a {
+    color: lightslategray;
+}
