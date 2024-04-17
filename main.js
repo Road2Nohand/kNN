@@ -76,13 +76,13 @@ function drawMousePosition() {
 function drawPoint(x, y, label) {
     if (label) {
         if (label === "Adeliepinguin") {
-            ctx.strokeStyle = '#ff8205'; // orange/adelie
+            ctx.strokeStyle = '#ff8205'; // orange / "adelie"
         }
         if (label === "Eselspinguin") {
-            ctx.strokeStyle = '#0e7475'; // blau/gentoo
+            ctx.strokeStyle = '#0e7475'; // blau / "gentoo"
         }
         if (label === "Zuegelpinguin") {
-            ctx.strokeStyle = '#c45cc9'; // pink/chinstrap
+            ctx.strokeStyle = '#c45cc9'; // pink / "chinstrap"
         }
 
     } else {
